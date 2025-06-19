@@ -2,8 +2,8 @@
 :root {
     --color-fondo: #e0e0d7; /* 
     --color-texto: #36454F; /* Gris carbón, casi negro */
-    --color-acento: #A93C29; /* Rojo óxido / quemado */
-    --color-descripcion: #5c6a76;
+    --color-acento: #bb4c0c; /* Rojo óxido / quemado */
+    --color-descripcion: #3d505f;
 
     --fuente-titular: 'Uncial Antiqua', cursive;
     --fuente-titulo-principal: 'Cinzel', serif;
@@ -19,7 +19,8 @@
 
 body {
     font-family: var(--fuente-cuerpo);
-    background-color: var(--color-fondo);
+   /* background-color: var(--color-fondo);*/
+   background-image: url(/images/bgImg/greenBGcoffee.jpg);
     color: var(--color-texto);
     line-height: 1.6;
 }
@@ -28,9 +29,9 @@ body {
 .hero {
     text-align: center;
     padding: 60px 20px;
-    background-color: rgba(0, 0, 0, 0.05); 
+    background-color: rgba(0, 0, 0, 0.911); 
     
-    background-image: url(/images/compostela.jpg); 
+    /*background-image: url(/images/bar.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -107,12 +108,14 @@ section h2 {
 }
 
 #header-item{
+    color: var(--color-acento);
+    font-size: 1.3em;
     text-align: center;
 }
 
 /*seccion carta fondo*/
 #cafes-y-bebidas {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.945);
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 30px;
@@ -136,14 +139,26 @@ footer {
     text-align: center;
     padding: 40px 20px;
     margin-top: 50px;
-    background-color: rgba(0, 0, 0, 0.05);
+    /*background-color: rgba(0, 0, 0, 0.05);*/
+    background-color: rgba(0, 0, 0, 0.911);
 }
 
 footer p {
     font-family: var(--fuente-cuerpo);
     font-style: italic;
-    color: var(--color-texto);
+    color: var(--color-fondo);
 }
+
+footer a {
+  color: var(--color-acento);
+  text-decoration: none;
+  font-weight:bold;
+}
+
+footer a:hover {
+  text-decoration: underline;  
+}
+
 
 /* --- ESTILOS PARA LA NAVEGACIÓN DE IDIOMAS --- */
 .language-nav {
@@ -165,7 +180,7 @@ footer p {
 
 .language-nav a {
     text-decoration: none;
-    color: var(--color-descripcion);
+    color: var(--color-fondo);
     font-family: var(--fuente-cuerpo);
     font-weight: 700;
     font-size: 0.9rem;
@@ -178,7 +193,7 @@ footer p {
 
 /* Estilo para el idioma que está activo */
 .language-nav a.active {
-    color: var(--color-texto);
+    color: var(--color-fondo);
     border-bottom: 2px solid var(--color-acento);
     padding-bottom: 2px;
 }
